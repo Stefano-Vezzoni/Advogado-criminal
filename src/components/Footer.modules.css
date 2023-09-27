@@ -1,0 +1,129 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--black);
+
+    position: relative;
+    z-index: 2;
+
+    font-family: var(--font-exo2);
+    font-size: var(--font-16px);
+    font-weight: 600;
+}
+
+.footerContainer hr {
+    background: var(--gray);
+
+    height: 1px;
+    width: 100%;
+}
+
+.footerContainer img {
+    width: 54px;
+    height: 54px;
+
+    margin-top: 46px;
+}
+
+.footerContainer p:nth-of-type(1) {
+    margin-top: 30px;
+}
+
+.footerContainer p:nth-of-type(2) {
+    font-family: var(--font-exo);
+    font-size: var(--font-14px);
+    font-weight: 400;
+
+    margin-top: 12px;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 48px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.navBar a {
+    all: unset;
+    position: relative;
+    text-decoration: none;
+}
+
+.navBar a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--gray);
+    transition: width 0.15s;
+}
+
+.navBar a:hover::before {
+    width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+@media (max-width: 810px) {
+    .footerContainer img {
+        width: 36px;
+        height: 36px;
+
+        margin-top: 16px;
+    }
+
+    .footerContainer p:nth-of-type(1) {
+        margin-top: 14px;
+    }
+
+    .footerContainer p:nth-of-type(2) {
+        margin-top: 6px;
+    }
+
+    .navBar {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+
+    .copyright {
+        margin: 6px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerContainer img {
+        width: 36px;
+        height: 36px;
+
+        margin-top: 16px;
+    }
+
+    .footerContainer p:nth-of-type(1) {
+        margin-top: 14px;
+    }
+
+    .footerContainer p:nth-of-type(2) {
+        margin-top: 6px;
+    }
+
+    .navBar {
+        margin-top: 12px;
+        margin-bottom: 4px;
+    }
+
+    .copyright {
+        margin: 6px 0px;
+    }
+}

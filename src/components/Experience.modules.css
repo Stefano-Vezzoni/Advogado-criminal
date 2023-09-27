@@ -1,0 +1,292 @@
+.experienceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../assets/experience.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    height: 20vh;
+}
+
+.experienceContainer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: var(--font-exo);
+    font-weight: 600;
+    font-size: var(--font-30px);
+    letter-spacing: 30px;
+    color: var(--white);
+}
+
+.areas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 120px;
+    margin-top: 60px;
+
+    height: 100%;
+    width: 100%;
+}
+
+.areas span {
+    display: flex;
+    gap: 220px;
+}
+
+.areas p {
+    font-family: var(--font-exo2);
+    font-weight: 600;
+    font-size: var(--font-23px);
+}
+
+.areas span div {
+    width: 484px;
+    height: 276px;
+
+    padding: 56px 56px;
+}
+
+.tribunalDoJuri {
+    background-image: url(../assets/tribunal-do-juri-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.juizadoEspecial {
+    background-image: url(../assets/juizado-especial-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.execucaoPenal {
+    background-image: url(../assets/execucao-penal-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.demaisCrimes {
+    background-image: url(../assets/demais-crimes-img.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+@media (max-width: 1440px) {
+    .experienceContainer {
+        height: 18vh;
+    }
+
+    .areas {
+        gap: 92px;
+        margin-top: 48px;
+    }
+
+    .areas span {
+        gap: 92px;
+    }
+
+    .areas span div {
+        width: 466px;
+        height: 270px;
+
+        padding: 46px 64px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .experienceContainer {
+        height: 20vh;
+    }
+
+    .areas {
+        gap: 72px;
+        margin-top: 48px;
+    }
+
+    .areas span {
+        gap: 72px;
+    }
+
+    .areas span div {
+        width: 452px;
+        height: 261px;
+
+        padding: 46px 64px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .experienceContainer {
+        height: 15vh;
+    }
+
+    .areas {
+        gap: 48px;
+        margin-top: 28px;
+    }
+
+    .areas span {
+        gap: 48px;
+    }
+
+    .areas span div {
+        width: 360px;
+        height: 220px;
+
+        padding: 46px 64px;
+    }
+}
+
+@media (max-width: 810px) {
+    .experienceContainer {
+        height: 10vh;
+    }
+
+    .areas {
+        gap: 36px;
+        margin-top: 24px;
+    }
+
+    .areas span {
+        gap: 36px;
+    }
+
+    .areas span div {
+        width: 325px;
+        height: 210px;
+
+        padding: 42px 54px;
+    }
+}
+
+@media (max-width: 768px) {
+    .experienceContainer {
+        height: 10vh;
+    }
+
+    .areas {
+        gap: 24px;
+        margin-top: 24px;
+    }
+
+    .areas span {
+        gap: 24px;
+    }
+
+    .areas span div {
+        width: 310px;
+        height: 195px;
+
+        padding: 42px 54px;
+    }
+}
+
+@media (max-width: 414px) {
+    .experienceContainer {
+        height: 60px;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 20px;
+        margin: 0px;
+    }
+
+    .areas {
+        gap: 8px;
+        margin-top: 4px;
+    }
+
+    .areas p {
+        font-size: 180%;
+    }
+
+    .areas span {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .areas span div {
+        width: 350px;
+        height: 220px;
+
+        padding: 46px 44px;
+    }
+}
+
+@media (max-width: 390px) {
+    .experienceContainer {
+        height: 60px;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 20px;
+        margin: 0px;
+    }
+
+    .areas {
+        gap: 8px;
+        margin-top: 4px;
+    }
+
+    .areas p {
+        font-size: 180%;
+    }
+
+    .areas span {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .areas span div {
+        width: 300px;
+        height: 200px;
+
+        padding: 46px 44px;
+    }
+}
+
+@media (max-width: 360px) {
+    .experienceContainer {
+        height: 80px;
+        width: 360px;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 20px;
+    }
+
+    .areas {
+        gap: 8px;
+        margin-top: 4px;
+    }
+
+    .areas p {
+        font-size: 180%;
+    }
+
+    .areas span {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .areas span div {
+        width: 300px;
+        height: 200px;
+
+        padding: 46px 44px;
+    }
+}

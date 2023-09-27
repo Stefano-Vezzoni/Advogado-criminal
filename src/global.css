@@ -1,0 +1,87 @@
+:root {
+  --white: #fff;
+  --black: #0F0F0F;
+  --darkgray: #2E2E2E;
+  --gray: #C9C9C9;
+  --gray-hover: #DADADA;
+  --green: #2AA81A;
+  --green-hover: #33CD1F;
+  --red: red;
+  --darkred: #7D2F31;
+
+  --font-allerta: 'Allerta', sans-serif;
+  --font-cutive: 'Cutive Mono', monospace;
+  --font-exo: 'Exo', sans-serif;
+  --font-exo2: 'Exo 2', sans-serif;
+
+  --font-40px: 2.5rem;
+  --font-30px: 1.875rem;
+  --font-23px: 1.43rem;
+  --font-20px: 1.25rem;
+  --font-16px: 1rem;
+  --font-14px: 0.875rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #222121;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--darkgray);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #464141;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 1366px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 414px) {
+  html {
+    font-size: 50%;
+  }
+}
