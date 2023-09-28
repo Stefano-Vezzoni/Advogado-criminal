@@ -6,14 +6,16 @@
   --gray-hover: #DADADA;
   --green: #2AA81A;
   --green-hover: #33CD1F;
-  --red: red;
-  --darkred: #7D2F31;
+  --red: #CC0000;
+  --darkred: #7D2F3166;
 
   --font-allerta: 'Allerta', sans-serif;
   --font-cutive: 'Cutive Mono', monospace;
   --font-exo: 'Exo', sans-serif;
   --font-exo2: 'Exo 2', sans-serif;
+  --font-sarala: 'Sarala', sans-serif;
 
+  --font-168px: 10.5rem;
   --font-40px: 2.5rem;
   --font-30px: 1.875rem;
   --font-23px: 1.43rem;
