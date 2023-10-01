@@ -1,3 +1,4 @@
+import whatsappIcon from "../assets/whatsapp-icon-hero.svg";
 import './Hero.modules.css';
 
 export function Hero() {
@@ -7,6 +8,13 @@ export function Hero() {
                 <p>Victor Augusto</p>
                 <p>Advogado Criminalista</p>
             </span>
+
+            <div className='contactButton'>
+                <button>
+                    <img src={whatsappIcon} />
+                    <p>Entrar em contato</p>
+                </button>
+            </div>
         </div>
     )
 }

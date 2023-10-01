@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: right;
 
+    position: relative;
+
     margin-right: 164px;
 }
 
@@ -40,6 +42,28 @@
     font-size: var(--font-20px);
 }
 
+.contactButton {
+    position: absolute;
+    bottom: 112px;
+    left: 72px;
+}
+
+.contactButton button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border: none;
+
+    font-size: var(--font-20px);
+    font-family: var(--font-exo2);
+    color: var(--white);
+    font-weight: 600;
+
+    gap: 12px;
+}
+
 @media (max-width: 1440px) {
     .heroContainer {
         margin-right: 98px;
@@ -48,6 +72,11 @@
     .textContainer {
         padding-right: 58.5%;
 
+    }
+
+    .contactButton {
+        bottom: 98px;
+        left: 72px;
     }
 }
 
@@ -83,6 +112,10 @@
         padding: 50%;
     }
 
+    .contactButton {
+        bottom: 72px;
+        left: 68px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -124,6 +157,20 @@
 
     .textContainer p:nth-of-type(2) {
         font-size: 160%;
+    }
+
+    .contactButton {
+        bottom: 42px;
+        left: 32px;
+    }
+
+    .contactButton button {
+        gap: 8px;
+    }
+
+    .contactButton img {
+        height: 32px;
+        width: 32px;
     }
 }
 
@@ -174,5 +221,15 @@
 
     .textContainer p:nth-of-type(2) {
         font-size: 160%;
+    }
+
+    .contactButton {
+        bottom: 32px;
+        left: 24px;
+    }
+
+    .contactButton img {
+        height: 28px;
+        width: 28px;
     }
 }

@@ -383,6 +383,8 @@
 @media (max-width: 414px) {
     .contentContainer {
         gap: 56px;
+
+        margin-right: -6px;
     }
 
     .myWork {

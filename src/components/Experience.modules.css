@@ -39,7 +39,6 @@
     color: var(--white);
 }
 
-
 .areas {
     display: flex;
     flex-direction: column;
@@ -99,9 +98,23 @@
     background-size: contain;
 }
 
+@media (max-width: 1536px) {
+    .experienceContainer p {
+        letter-spacing: 52px;
+    }
+}
+
 @media (max-width: 1440px) {
     .experienceContainer {
-        height: 18vh;
+        height: 20vh;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 44px;
+    }
+
+    .experienceContainer::before {
+        font-size: 142px;
     }
 
     .areas {
@@ -126,6 +139,14 @@
         height: 20vh;
     }
 
+    .experienceContainer p {
+        letter-spacing: 42px;
+    }
+
+    .experienceContainer::before {
+        font-size: 134px;
+    }
+
     .areas {
         gap: 72px;
         margin-top: 48px;
@@ -145,7 +166,15 @@
 
 @media (max-width: 1024px) {
     .experienceContainer {
-        height: 15vh;
+        height: 18vh;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 38px;
+    }
+
+    .experienceContainer::before {
+        font-size: 102px;
     }
 
     .areas {
@@ -167,7 +196,17 @@
 
 @media (max-width: 810px) {
     .experienceContainer {
-        height: 10vh;
+        height: 16vh;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 32px;
+    }
+
+    .experienceContainer::before {
+        display: inline-block;
+        font-size: 94px;
+        transform: scale(1, 1.3) translate(-50%, -40%);
     }
 
     .areas {
@@ -189,7 +228,17 @@
 
 @media (max-width: 768px) {
     .experienceContainer {
-        height: 10vh;
+        height: 16vh;
+    }
+
+    .experienceContainer p {
+        letter-spacing: 30px;
+    }
+
+    .experienceContainer::before {
+        display: inline-block;
+        font-size: 82px;
+        transform: scale(1, 1.3) translate(-50%, -40%);
     }
 
     .areas {
@@ -211,12 +260,18 @@
 
 @media (max-width: 414px) {
     .experienceContainer {
-        height: 60px;
+        height: 14vh;
     }
 
     .experienceContainer p {
-        letter-spacing: 20px;
+        letter-spacing: 14px;
         margin: 0px;
+    }
+
+    .experienceContainer::before {
+        display: inline-block;
+        font-size: 42px;
+        transform: scale(.95, 1.6) translate(-50%, -34%);
     }
 
     .areas {
@@ -244,12 +299,18 @@
 
 @media (max-width: 390px) {
     .experienceContainer {
-        height: 60px;
+        height: 14vh;
     }
 
     .experienceContainer p {
-        letter-spacing: 20px;
+        letter-spacing: 15px;
         margin: 0px;
+    }
+
+    .experienceContainer::before {
+        display: inline-block;
+        font-size: 36px;
+        transform: scale(.95, 1.7) translate(-50%, -29%);
     }
 
     .areas {
@@ -277,12 +338,18 @@
 
 @media (max-width: 360px) {
     .experienceContainer {
-        height: 80px;
-        width: 360px;
+        height: 14vh;
     }
 
     .experienceContainer p {
-        letter-spacing: 20px;
+        letter-spacing: 15px;
+        margin: 0px;
+    }
+
+    .experienceContainer::before {
+        display: inline-block;
+        font-size: 36px;
+        transform: scale(.95, 1.6) translate(-50%, -30%);
     }
 
     .areas {
