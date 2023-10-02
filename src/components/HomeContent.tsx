@@ -4,6 +4,14 @@ import gmailIcon from '../assets/gmail-icon.svg';
 import whatsappIcon from '../assets/whatsapp-Icon.svg';
 
 export function HomeContent() {
+
+    function whatsappButton() {
+        window.open("http://web.whatsapp.com/send?phone=5511947704363", '_blank');
+    }
+
+    function gmailButton() {
+        window.location.href = "mailto:stefanov.santos@gmail.com";
+    }
     return (
         <div className='contentContainer' id='my-work'>
             <div className='myWork'>
@@ -42,12 +50,12 @@ export function HomeContent() {
                 </p>
 
                 <div className='contactInformation'>
-                    <button className='whatsappButton'>
+                    <button className='whatsappButton' onClick={whatsappButton}>
                         <img src={whatsappIcon} alt="" />
                         (11) 94770-4363
                     </button>
 
-                    <button className='emailButton'>
+                    <button className='emailButton' onClick={gmailButton}>
                         <img src={gmailIcon} alt="" />
                         victor.ac.duarte@gmail.com
                     </button>
