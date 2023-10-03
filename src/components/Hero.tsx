@@ -4,7 +4,7 @@ import './Hero.modules.css';
 export function Hero() {
 
     function whatsappButton() {
-        window.open("http://web.whatsapp.com/send?phone=5511947704363", '_blank');
+        window.open("http://api.whatsapp.com/send?phone=5511947704363", '_blank');
     }
 
     return (

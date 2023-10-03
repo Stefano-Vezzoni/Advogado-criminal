@@ -16,7 +16,7 @@
 
     gap: 22px;
 
-    padding-right: 46.5%;
+    padding-right: 51%;
 
     height: 104vh;
     width: 104vh;
@@ -56,12 +56,20 @@
     background-color: transparent;
     border: none;
 
+    transition: transform 0.15s;
+
     font-size: var(--font-20px);
     font-family: var(--font-exo2);
     color: var(--white);
     font-weight: 600;
 
     gap: 12px;
+}
+
+.contactButton button:hover {
+    transform: scale(1.1);
+
+    cursor: pointer;
 }
 
 @media (max-width: 1440px) {

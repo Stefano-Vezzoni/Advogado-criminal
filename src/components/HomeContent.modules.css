@@ -141,6 +141,8 @@
 
 .whatsappButton:hover {
     background: var(--green-hover);
+
+    cursor: pointer;
 }
 
 .emailButton {
@@ -158,6 +160,8 @@
 
 .emailButton:hover {
     background: var(--gray-hover);
+
+    cursor: pointer;
 }
 
 @media (max-width: 1440px) {

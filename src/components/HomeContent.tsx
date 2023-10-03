@@ -6,11 +6,11 @@ import whatsappIcon from '../assets/whatsapp-Icon.svg';
 export function HomeContent() {
 
     function whatsappButton() {
-        window.open("http://web.whatsapp.com/send?phone=5511947704363", '_blank');
+        window.open("http://api.whatsapp.com/send?phone=5511947704363", '_blank');
     }
 
     function gmailButton() {
-        window.location.href = "mailto:stefanov.santos@gmail.com";
+        window.location.href = "mailto:victor.ac.duarte@gmail.com";
     }
     return (
         <div className='contentContainer' id='my-work'>

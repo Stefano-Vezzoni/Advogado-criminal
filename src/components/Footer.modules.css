@@ -67,6 +67,10 @@
     transition: width 0.15s;
 }
 
+.navBar a:hover {
+    cursor: pointer;
+}
+
 .navBar a:hover::before {
     width: 100%;
 }
