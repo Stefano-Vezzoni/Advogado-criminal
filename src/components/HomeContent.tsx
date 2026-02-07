@@ -1,6 +1,5 @@
 import "./HomeContent.modules.css";
 
-import gmailIcon from "../assets/gmail-icon.svg";
 import whatsappIcon from "../assets/whatsapp-Icon.svg";
 
 export function HomeContent() {
