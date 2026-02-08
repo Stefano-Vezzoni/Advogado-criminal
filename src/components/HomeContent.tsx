@@ -1,6 +1,7 @@
 import "./HomeContent.modules.css";
 
 import whatsappIcon from "../assets/whatsapp-Icon.svg";
+import { Footer } from "./Footer";
 
 export function HomeContent() {
   const whatsappPhone = import.meta.env.VITE_WHATSAPP_PHONE;

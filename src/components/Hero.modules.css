@@ -1,243 +1,279 @@
 .heroContainer {
-    display: flex;
-    align-items: center;
-    justify-content: right;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 
-    position: relative;
+  position: relative;
 
-    margin-right: 164px;
+  margin-right: 164px;
 }
 
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    gap: 22px;
+  gap: 22px;
 
-    padding-right: 51%;
+  padding-right: 51%;
 
-    height: 104vh;
-    width: 104vh;
+  height: 104vh;
+  width: 104vh;
 
-    background-image: url("../assets/hero-img.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../assets/hero-img.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .textContainer p {
-    white-space: nowrap;
-    font-weight: 400;
+  white-space: nowrap;
+  font-weight: 400;
 }
 
 .textContainer p:nth-of-type(1) {
-    font-family: var(--font-allerta);
-    font-size: var(--font-40px);
-    letter-spacing: 16px;
+  font-family: var(--font-allerta);
+  font-size: var(--font-40px);
+  letter-spacing: 16px;
 }
 
 .textContainer p:nth-of-type(2) {
-    font-family: var(--font-cutive);
-    font-size: var(--font-20px);
+  font-family: var(--font-cutive);
+  font-size: var(--font-20px);
 }
 
+/* .contactButton {
+  position: fixed;
+  bottom: 112px;
+  left: 72px;
+  background: var(--black);
+  border-radius: 40px;
+  padding: 8px 20px;
+} */
+
 .contactButton {
-    position: absolute;
-    bottom: 112px;
-    left: 72px;
+  position: fixed;
+  bottom: 112px;
+  left: 72px;
+  background: linear-gradient(
+    135deg,
+    #3b2627 0%,
+    #171717 25%,
+    #3b2627 50%,
+    #171717 75%,
+    #171717 100%
+  );
+  background-size: 300% 300%;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgb(98 98 98 / 30%);
+  border-radius: 40px;
+  padding: 16px 24px;
+
+  animation: mirage-bg 8s ease infinite;
+  z-index: 9999;
+}
+
+@keyframes mirage-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .contactButton button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 
-    transition: transform 0.15s;
+  transition: transform 0.15s;
 
-    font-size: var(--font-20px);
-    font-family: var(--font-exo2);
-    color: var(--white);
-    font-weight: 600;
+  font-size: var(--font-20px);
+  font-family: var(--font-exo2);
+  color: var(--white);
+  font-weight: 600;
 
-    gap: 12px;
+  gap: 12px;
 }
 
 .contactButton button:hover {
-    transform: scale(1.1);
+  transform: scale(1.015);
 
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @media (max-width: 1440px) {
-    .heroContainer {
-        margin-right: 98px;
-    }
+  .heroContainer {
+    margin-right: 98px;
+  }
 
-    .textContainer {
-        padding-right: 58.5%;
+  .textContainer {
+    padding-right: 58.5%;
+  }
 
-    }
-
-    .contactButton {
-        bottom: 98px;
-        left: 72px;
-    }
+  .contactButton {
+    bottom: 98px;
+    left: 72px;
+  }
 }
 
 @media (max-width: 1366px) {
-    .heroContainer {
-        margin-right: 98px;
-    }
+  .heroContainer {
+    margin-right: 98px;
+  }
 
-    .textContainer {
-        padding-right: 55.5%;
-    }
+  .textContainer {
+    padding-right: 55.5%;
+  }
 }
 
 @media (max-width: 1024px) {
-    .heroContainer {
-        margin-right: 0px;
-    }
+  .heroContainer {
+    margin-right: 0px;
+  }
 
-    .textContainer {
-        padding-right: 48%;
-    }
+  .textContainer {
+    padding-right: 48%;
+  }
 }
 
 @media (max-width: 810px) {
-    .heroContainer {
-        margin-right: 0px;
-    }
+  .heroContainer {
+    margin-right: 0px;
+  }
 
-    .textContainer {
-        height: 75vh;
-        width: 75vh;
+  .textContainer {
+    height: 75vh;
+    width: 75vh;
 
-        padding: 50%;
-    }
+    padding: 50%;
+  }
 
-    .contactButton {
-        bottom: 72px;
-        left: 68px;
-    }
+  .contactButton {
+    bottom: 72px;
+    left: 68px;
+  }
 }
 
 @media (max-width: 768px) {
-    .heroContainer {
-        margin-right: 0px;
-    }
+  .heroContainer {
+    margin-right: 0px;
+  }
 
-    .textContainer {
-        height: 75vh;
-        width: 75vh;
+  .textContainer {
+    height: 75vh;
+    width: 75vh;
 
-        padding: 50%;
-    }
-
+    padding: 50%;
+  }
 }
 
 @media (max-width: 414px) {
-    .heroContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .textContainer {
-        gap: 10px;
+  .textContainer {
+    gap: 10px;
 
-        padding: 0px;
+    padding: 0px;
 
-        height: 897px;
-        width: 350px;
+    height: 897px;
+    width: 350px;
 
-        background-image: url("../assets/hero-img2.svg");
-        background-position: 0%;
-    }
+    background-image: url("../assets/hero-img2.svg");
+    background-position: 0%;
+  }
 
-    .textContainer p:nth-of-type(1) {
-        letter-spacing: 12px;
-    }
+  .textContainer p:nth-of-type(1) {
+    letter-spacing: 12px;
+  }
 
-    .textContainer p:nth-of-type(2) {
-        font-size: 160%;
-    }
+  .textContainer p:nth-of-type(2) {
+    font-size: 160%;
+  }
 
-    .contactButton {
-        bottom: 42px;
-        left: 32px;
-    }
+  .contactButton {
+    bottom: 42px;
+    left: 32px;
+  }
 
-    .contactButton button {
-        gap: 8px;
-    }
+  .contactButton button {
+    gap: 8px;
+  }
 
-    .contactButton img {
-        height: 32px;
-        width: 32px;
-    }
+  .contactButton img {
+    height: 32px;
+    width: 32px;
+  }
 }
 
 @media (max-width: 390px) {
-    .heroContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .heroContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .textContainer {
-        gap: 10px;
+  .textContainer {
+    gap: 10px;
 
-        padding: 0px;
+    padding: 0px;
 
-        height: 845px;
-        width: 350px;
+    height: 845px;
+    width: 350px;
 
-        background-image: url("../assets/hero-img2.svg");
-        background-position: 0%;
-    }
+    background-image: url("../assets/hero-img2.svg");
+    background-position: 0%;
+  }
 
-    .textContainer p:nth-of-type(1) {
-        letter-spacing: 12px;
-    }
+  .textContainer p:nth-of-type(1) {
+    letter-spacing: 12px;
+  }
 
-    .textContainer p:nth-of-type(2) {
-        font-size: 160%;
-    }
+  .textContainer p:nth-of-type(2) {
+    font-size: 160%;
+  }
 }
 
 @media (max-width: 360px) {
-    .textContainer {
-        gap: 10px;
+  .textContainer {
+    gap: 10px;
 
-        padding: 0px;
+    padding: 0px;
 
-        height: 800px;
-        width: 350px;
+    height: 800px;
+    width: 350px;
 
-        background-image: url("../assets/hero-img2.svg");
-        background-position: 50%;
-    }
+    background-image: url("../assets/hero-img2.svg");
+    background-position: 50%;
+  }
 
-    .textContainer p:nth-of-type(1) {
-        letter-spacing: 12px;
-    }
+  .textContainer p:nth-of-type(1) {
+    letter-spacing: 12px;
+  }
 
-    .textContainer p:nth-of-type(2) {
-        font-size: 160%;
-    }
+  .textContainer p:nth-of-type(2) {
+    font-size: 160%;
+  }
 
-    .contactButton {
-        bottom: 32px;
-        left: 24px;
-    }
+  .contactButton {
+    bottom: 32px;
+    left: 24px;
+  }
 
-    .contactButton img {
-        height: 28px;
-        width: 28px;
-    }
+  .contactButton img {
+    height: 28px;
+    width: 28px;
+  }
 }

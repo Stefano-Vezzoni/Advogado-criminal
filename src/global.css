@@ -1,19 +1,21 @@
 :root {
   --white: #fff;
-  --black: #0F0F0F;
-  --darkgray: #2E2E2E;
-  --gray: #C9C9C9;
-  --gray-hover: #DADADA;
-  --green: #2AA81A;
-  --green-hover: #33CD1F;
-  --red: #CC0000;
-  --darkred: #7D2F3166;
+  --white-opacity67:#ffffffab;
+  --black: #0f0f0f;
+  --black-opacity90: #0f0f0ff2;
+  --darkgray: #2e2e2e;
+  --gray: #c9c9c9;
+  --gray-hover: #dadada;
+  --green: #2aa81a;
+  --green-hover: #33cd1f;
+  --darkred: #742728a4;
+  #ffffffab
 
-  --font-allerta: 'Allerta', sans-serif;
-  --font-cutive: 'Cutive Mono', monospace;
-  --font-exo: 'Exo', sans-serif;
-  --font-exo2: 'Exo 2', sans-serif;
-  --font-sarala: 'Sarala', sans-serif;
+  --font-allerta: "Allerta", sans-serif;
+  --font-cutive: "Cutive Mono", monospace;
+  --font-exo: "Exo", sans-serif;
+  --font-exo2: "Exo 2", sans-serif;
+  --font-sarala: "Sarala", sans-serif;
 
   --font-168px: 10.5rem;
   --font-40px: 2.5rem;

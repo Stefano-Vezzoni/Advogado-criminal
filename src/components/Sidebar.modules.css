@@ -1,57 +1,77 @@
 .sidebar {
-    width: 160px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
 
-    gap: 24px;
+  gap: 24px;
+  margin: 0 4.5%;
+  padding: 0 8px;
+  background: linear-gradient(
+    270deg,
+    #271819 0%,
+    #171717 25%,
+    #271819 50%,
+    #171717 75%,
+    #171717 100%
+  );
+  background-size: 300% 300%;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgb(98 98 98 / 30%);
+
+  animation: mirage-bg 8s ease infinite;
+}
+
+@keyframes mirage-bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .sidebar span {
-    width: 5px;
-    height: 9px;
-    background-color: var(--darkred);
+  width: 5px;
+  height: 9px;
+  background-color: var(--darkred);
 
-    border-radius: 50%;
-    margin: 8px 0;
+  border-radius: 50%;
+  margin: 8px 0;
 }
 
 .sidebar span.sectionActive {
-    background-color: var(--red);
+  background-color: var(--white-opacity67);
 }
 
 .line {
-    width: 1px;
-    height: 40%;
-    background-color: var(--darkred);
-
+  width: 1px;
+  height: 40%;
+  background-color: var(--darkred);
 }
 
 .line-after-circles {
-    width: 1px;
-    height: 100%;
-    background-color: var(--darkred);
-}
-
-@media (max-width: 1440px) {
-    .sidebar {
-        width: 130px;
-    }
+  width: 1px;
+  height: 100%;
+  background-color: var(--darkred);
 }
 
 @media (max-width: 1024px) {
-    .sidebar {
-        width: 100px;
-    }
+  .sidebar {
+    display: none;
+  }
 }
 
 @media (max-width: 810px) {
-    .sidebar {
-        display: none;
-    }
+  .sidebar {
+    display: none;
+  }
 }
